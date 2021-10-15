@@ -36,13 +36,26 @@ input[type=text]:focus{
 .buscar{
   position:relative;
 }
-.buscar i{
+.buscar i[class="fab fa-google fa-1x"]{
   position:relative;
-  right: 472px;
+  right: 520px;
   top: 12px;
   color: grey;
   transition: 1s;
 }
-.buscar input[type=text]:focus + i{
+.buscar i[class="fas fa-search fa-1x"]{
+  position:relative;
+  right: 35px;
+  top: 12px;
+  color: grey;
+  transition: 1s;
+}  
+.buscar input[type=text]:focus + i[class="fab fa-google fa-1x"]{
   color: dodgerblue;
+}
+.lupa{
+  width: 45px;
+  height: 25px;
+  background: rgb(32, 22, 58);
+  border: transparent;
 }

@@ -8,21 +8,38 @@
   <!-- partial:index.partial.html -->
   <script src="https://kit.fontawesome.com/f988a76c95.js" crossorigin="anonymous"></script>
   <!-- partial -->
+
+  <!-- função salva a os dados em uma variavel e lança o alerta  -->
+  <script>
+    function buscar(){
+      var input1 = document.forms["pesquisa"]["busca"].value;
+      if (input1 == ""){
+        alert("Por favor digite sua busca!");
+        return false;
+      }  
+      else{
+        alert("Olá, Obrigado por buscar " + input1 + ".");
+        return true;
+      }  
+   }
+  </script>
 </head>
 
+<!-- Logo -->
 <body>
-<div class="logo">
-  <img src="../src/images/firefoxpq.png" alt="Logo">
-  <h1>Firefox</h1>
-</div>
+  <div class="logo">
+    <img src="../src/images/firefoxpq.png" alt="Logo">
+    <h1>Firefox</h1>
+  </div>
 
-<!-- <div class="logo">
-  <img src="../src/images/firefoxpq.png" alt="Logo">  
-</div> -->
-
-<div class="buscar">
-  <input type="text" placeholder="Pesquise com google ou digite um endereço">
-  <i class="fab fa-google fa-1x"></i>
+<!-- input de busca -->
+  <div class="buscar">
+    <form  name="pesquisa" onsubmit="return buscar()" method="post" >
+      <input type="text" name="busca" placeholder="Pesquise com google ou digite um endereço">
+      <button class="lupa" type="submit"  ></button>
+    </form>
+    <i class="fab fa-google fa-1x"></i>
+    <i class="fas fa-search fa-1x"></i>
 </div>
   
 </body>
