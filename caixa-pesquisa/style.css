@@ -1,0 +1,46 @@
+body{
+  padding: 0px;
+  max-width: 0px;
+  background: #00a8ff;
+}
+.seach-box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #353b48;
+  height: 40px;
+  border-radius: 40px;
+  padding: 10px;
+}
+.seach-btn{
+  color: #00a8ff;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background: #353b48;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  transition: 2s;
+}
+.seach-txt{
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0px;
+  color: white;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+}
+.seach-box:hover > .seach-txt{
+  width: 240px;
+  padding: 0 6px;
+}
+.seach-box:hover > .seach-btn{
+  background: white;
+}
