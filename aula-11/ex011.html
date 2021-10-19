@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=], initial-scale=1.0">
+  
+  <style type="text/css">
+    body {
+      background: #819eF6;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  </style>
+  
+  <title>PF</title>
+</head>
+<body>
+  <h1>Sistema de nacionalidade</h1>
+  Qual seu País: <input type="text" name="txtp" id="txtp"> - 
+  <input type="button" value="Verificar" onclick="verificar()">
+  
+  <div id="res">
+    
+  </div>  
+  
+  <script>
+    function verificar() {
+      // salva o input na variavel txtpais
+      var txtpais = window.document.querySelector("input#txtp")
+      // trata a variavel com value para ser usada
+      var pais = (txtpais.value)
+      var res = window.document.querySelector("div#res")
+      res.innerHTML = `<p>Seu País é <strong>${pais.toUpperCase()}</strong></p>`
+      if (pais.toUpperCase() == "BRASIL"){
+        res.innerHTML += `<p>Você é <strong>Brasileiro</strong> !</p>`
+      }else{
+        res.innerHTML += `<p>Você é <strong>Estrangeiro</strong> !</p>`
+      }
+      
+    }
+  </script>
+</body>
+</html>
