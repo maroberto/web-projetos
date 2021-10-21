@@ -1,0 +1,38 @@
+html, body{
+  margin: 0;
+  height: 100%;
+}
+#menu{
+  background: #626262;
+  color: #fff;
+  position: relative;
+  height: 15%;
+}
+#alignment{
+  display: flex;
+  height: 75%
+}
+#leftmenu{
+  background: #628062;
+  color: #fff;
+  width: 25%;
+  height: 100%
+}#center{
+  background: #753030;
+  color: #fff;
+  width: 55%;
+  height: 100%
+}
+#rightmenu{
+  background: #706292;
+  color: #fff;
+  width: 20%;
+  height: 100%
+}
+
+#baseboard{
+  background: #303075;
+  color: #fff;
+  height: 10%;
+}
+
