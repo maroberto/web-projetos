@@ -1,3 +1,38 @@
+/* MENU */
+body, ul, li, p{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 1.2rem;
+  font-family: Arial;
+}
+a{
+  text-decoration: none;
+  color: #fff
+}
+.header{
+  background: #1d1e20;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.header img{
+  width: 50px;
+  height: 50px;
+}
+.menu{
+  display: flex;
+}
+.menu li{
+  margin-left: 10px;
+}
+.menu li a{
+  display: block;
+  padding: 10px;
+}
+
 /* CSS FlexBox 1 */
 h1{
   text-align: center;
