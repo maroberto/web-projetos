@@ -1,0 +1,33 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  
+  box-sizing: border-box;
+  background: #7B68EE;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 20vh 70vh 10vh;
+  grid-template-areas: "h h" "m a" "f f";
+}
+
+
+
+header{
+  background: #ADD8E6;
+  grid-area: h;
+}
+main{
+  background: #D2691E;
+  grid-area: m;
+}
+aside{
+  background: #808080;
+  grid-area: a;
+}
+footer{
+  background: #90EE90;
+  grid-area: f; 
+}
