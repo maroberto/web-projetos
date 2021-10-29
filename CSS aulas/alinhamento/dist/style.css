@@ -16,7 +16,7 @@ html, body{
   grid-gap: 5px;
   
   justify-items: center;
-  align-items: center;
+  align-items: start;
     
 }
 .container > div{

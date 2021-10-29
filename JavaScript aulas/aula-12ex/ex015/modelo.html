@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- chama arquivo CSS style -->
+  <link rel="stylesheet" href="style.css">
+  <title>Quantos anos voê tem</title>
+</head>
+<body>
+  <div class="container">
+    
+    <header id="header">
+      <h1>Qual é a sua idade</h1> 
+    </header>
+    
+    <section id="section">
+      <div id="anoAtual">
+        
+      </div>
+      
+      <div>
+        preencha com seus dados
+      </div>
+      <!-- ano de nascimento -->
+      <div id="ano">
+        Ano de nascimento: <input type="number" id="anoNasc">
+      </div>
+      
+      <!-- genero da pessoa -->
+      <div id="genero">
+        Sexo: <input type="text" id="sexo">
+      </div>
+
+      <div id="btn">
+        <input onClick="carregar()" type="submit" value="Enviar"> 
+      </div>
+      
+      <!-- imagem -->
+      <div id="foto">
+        <img id="imagem" src="images/digite.png" alt="Foto da Manha">
+      </div>
+
+      <div id="resultado">
+        
+      </div>
+
+    
+    </section>
+    
+    <footer id="footer">
+      &copy; Marcos Dev 2021
+    </footer>
+  
+  </div>
+  
+  <!-- chama arquivo javascript -->
+  <script src="script.js" ></script>
+</body>
+</html>

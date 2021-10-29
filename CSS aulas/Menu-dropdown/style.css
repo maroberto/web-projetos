@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  background: lightblue;
 }
 .menu{
   width: 100%;
@@ -25,7 +26,7 @@
   text-align: center;
   background-color: #222;
   color: #fff;
-  border-radius: 3px;
+  
 }
 .menu ul ul{
   /* altera a posição e exibição */
@@ -46,7 +47,7 @@
 }
 .menu ul ul li a{
   background-color: #069;
-  border-radius: 3px;
+ 
 }
 
 /* Estilo do botão */
