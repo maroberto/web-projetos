@@ -11,15 +11,32 @@
 </head>
 <body>
   <div class="container">
+    
     <header id="header">
       <h1>Título</h1> 
     </header>
+    
     <section id="section">
-      <div id="cont1">testando...
-        <div id="cont2"></div>
+      <div>
+        <p>Ano de nascimento:
+          <input type="number" name=txtano id="txtano" mim="0">
+        </p>
+        <p>Sexo:
+          <input type="radio" name=radsex id="mas" checked>
+          <label for="mas">Masculino</label>
+          <input type="radio" name="radsex" id="fem">
+          <label for="fem">Feminino</label> 
+        </p>
+        <p>
+          <input type="button" value="Verificar" onclick="verificar()">
+        </p>
       </div>
+      
+      <div id="res">Preencha os dados acima para ver o resultado!</div>
     </section>
+    
     <footer id="footer">&copy; Marcos Dev 2021</footer>
+  
   </div>
   
   <!-- chama arquivo javascript -->
