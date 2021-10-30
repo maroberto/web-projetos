@@ -1,14 +1,16 @@
 function carregar(){
   var anoNasc = window.document.getElementById('anoNasc');
   var ano = Number(anoNasc.value);
+  
   var sexo = window.document.getElementById('sexo');
   var genero = sexo.value;
   var resultado = window.document.getElementById('resultado')
   var img = window.document.getElementById('imagem');
   var anoAtual = window.document.getElementById('anoAtual');
-
+  // chama a data
   var data = new Date();
   var hoje = Number(data.getUTCFullYear())
+  
   anoAtual.innerHTML = `A data atual é ${hoje}`;
 
   // calcula idade
@@ -71,3 +73,5 @@ function carregar(){
     }  
   }
   }
+
+  

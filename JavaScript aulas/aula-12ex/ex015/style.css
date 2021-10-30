@@ -17,6 +17,7 @@ body{
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.404);
   
 }
+
 /* #section:hover{
   background: white;
   width: 505px;
@@ -25,6 +26,13 @@ body{
 } */
 div{
   text-align: center;
+  padding: 5px;
+}
+#ano_sexo{
+  display: flex;
+}
+#btn > input{
+  width: 150px;
   padding: 10px;
 }
 #footer{

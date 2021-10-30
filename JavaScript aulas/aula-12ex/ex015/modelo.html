@@ -7,7 +7,7 @@
   
   <!-- chama arquivo CSS style -->
   <link rel="stylesheet" href="style.css">
-  <title>Quantos anos voê tem</title>
+  <title>Quantos anos você tem</title>
 </head>
 <body>
   <div class="container">
@@ -21,19 +21,23 @@
         
       </div>
       
-      <div>
-        preencha com seus dados
-      </div>
-      <!-- ano de nascimento -->
-      <div id="ano">
-        Ano de nascimento: <input type="number" id="anoNasc">
-      </div>
-      
-      <!-- genero da pessoa -->
-      <div id="genero">
-        Sexo: <input type="text" id="sexo">
-      </div>
+        <div>
+          Preencha com seus dados:
+        </div>
 
+        <div id="ano_sexo">
+        <!-- ano de nascimento -->
+        <div id="ano">
+          Ano de nasc. <input type="number" id="anoNasc">
+        </div>
+
+        <!-- genero da pessoa -->
+        <div id="genero">
+          Sexo: <input type="text" id="sexo">
+        </div>
+
+      </div>
+        
       <div id="btn">
         <input onClick="carregar()" type="submit" value="Enviar"> 
       </div>
