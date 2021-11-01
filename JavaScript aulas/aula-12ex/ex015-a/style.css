@@ -18,7 +18,13 @@ body{
 } 
 #footer{
   text-align: center;
-  padding-top: 400px;
+  padding-top: 100px;
   display: block;
 }  
+#btn{
+  height: 30px;
+  width: 120px;
+  position: relative;
+  left: 180px;
   
+}  
