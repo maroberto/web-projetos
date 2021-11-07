@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.fundo { 
+  /*display: flex;*/
+  background: lightskyblue;
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+}
+.frente {
+  background: lawngreen;
+  width: 250px;
+  height: 250px;
+  position: relative;
+  left: 125px;
+  top: 480px;
+}
