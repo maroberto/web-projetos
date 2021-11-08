@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*?Edição menu*/
+.links {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  display: flex;
+}
+
+/*?Edição menu*/
+.links label {
+  padding: 10px 0;
+  flex-grow: 1;
+  cursor: pointer;
+  transition: all .4s;
+  text-align: center;
+  font-family: Arial;
+  font-size: 100%;
+  color: #fff;
+}
+
+/*?Oculta o checkbox*/
+.scroll input {
+  display: none;
+}
+
+/*?Hover para qualquer cor*/ 
+.links label:hover {
+  background-color: rgba(255, 255, 255, .2);
+}
+
+/*? configuração inicial da pagina*/
+.bloco {
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+/*
+.bloco img {
+  width: 40%;
+}
+*/
+#nodejs {
+  background-color: #7fdb42;
+}
+
+#bootstrap {
+  background-color: #69f;
+}
+
+#sass {
+  background-color: #faa;
+}
+
+#ruby {
+  background-color: #aaa;
+}
+
+#angular {
+  background-color: #414950;
+}
+/*?Configura a pagina sem scroll*/
+.scroll {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sections {
+  transition: all .7s;
+}
+/*?Configuração de rolagem com clique*/
+/*?para usar ~ (seletor irmão) precisa está dentro da mesma "div" */
+#rd_bootstrap:checked ~ .sections {
+  margin-top: -100vh;
+}
+
+#rd_sass:checked ~ .sections {
+  margin-top: -200vh;
+}
+
+#rd_ruby:checked ~ .sections {
+  margin-top: -300vh;
+}
+
+#rd_angular:checked ~ .sections {
+  margin-top: -400vh;
+}
+
